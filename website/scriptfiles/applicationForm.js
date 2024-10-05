@@ -19,14 +19,14 @@ let applicationFormButtonState = 1;
 let applicants = [];
 
 if (localStorage.getItem('database') === null) {
-  applicants.push({
-    gcn: 10616,
-    grade: '1',
-    className: '6',
-    number: '16',
-    myname: '윤동현',
-    ox: 0,
-  });
+  // applicants.push({
+  //   gcn: 10616,
+  //   grade: '1',
+  //   className: '6',
+  //   number: '16',
+  //   myname: '윤동현',
+  //   ox: 0,
+  // });
   localStorage.setItem('database', JSON.stringify(applicants));
 } else {
   applicants = JSON.parse(localStorage.getItem('database'));
